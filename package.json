@@ -1,9 +1,9 @@
 {
     "name": "devfocus-pomodoro",
-    "displayName": "DevFocus - Smart Pomodoro Timer",
+    "displayName": "Pomodoro For Developers",
     "description": "Professional Pomodoro timer with developer-focused features",
     "publisher": "Shellomo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icon": "media/pomodoro-logo.png",
     "galleryBanner": {
       "color": "#2C2C54",
