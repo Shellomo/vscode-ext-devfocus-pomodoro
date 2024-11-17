@@ -1,0 +1,55 @@
+{
+    "name": "devfocus-pomodoro",
+    "displayName": "DevFocus - Smart Pomodoro Timer",
+    "description": "Professional Pomodoro timer with developer-focused features",
+    "publisher": "Shellomo",
+    "version": "0.0.1",
+    "icon": "media/pomodoro-logo.png",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "DevFocus - Pomodoro Timer",
+            "properties": {
+                "pomodoroTimer.defaultDuration": {
+                    "type": "number",
+                    "default": 25,
+                    "minimum": 1,
+                    "maximum": 120,
+                    "description": "Default duration for timer in minutes"
+                },
+                "pomodoroTimer.enableCelebrations": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable celebratory animations and messages"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "vscode-timer-status.start",
+                "title": "Start Timer"
+            },
+            {
+                "command": "vscode-timer-status.stop",
+                "title": "Stop Timer"
+            },
+            {
+                "command": "vscode-timer-status.reset",
+                "title": "Reset Timer"
+            },
+            {
+                "command": "vscode-timer-status.setDuration",
+                "title": "Set Timer Duration"
+            }
+        ]
+    }
+}
