@@ -5,6 +5,9 @@
     "publisher": "Shellomo",
     "version": "0.0.1",
     "icon": "media/pomodoro-logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Shellomo/vscode-ext-devfocus-pomodoro"},
     "engines": {
         "vscode": "^1.85.0"
     },
